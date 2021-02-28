@@ -1,0 +1,36 @@
+.design {
+  background: {
+    image: url(../images/divicebg.jpg);
+    size: cover;
+    position: center;
+  }
+  &__overlay {
+    background-color: rgba(237, 237, 237, 0.8);
+    &__header {
+      h4 {
+        @extend %h4_styling;
+        @media only screen and (max-width: 585px) {
+          font-size: 20px;
+        }
+      }
+      h2 {
+        &:after {
+          @extend %line_after;
+        }
+        @media only screen and (max-width: 585px) {
+          font-size: 24px;
+        }
+      }
+    }
+    &__smalldevice {
+      right: 20px;
+      top: 50%;
+      @media only screen and (max-width: 425px) {
+        top: 53%;
+      }
+      @media only screen and (max-width: 375px) {
+        top: 55%;
+      }
+    }
+  }
+}

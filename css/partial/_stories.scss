@@ -1,0 +1,66 @@
+.stories {
+  &__header {
+    h4 {
+      @extend %h4_styling;
+      @media only screen and (max-width: 585px) {
+        font-size: 24px;
+      }
+    }
+    h2 {
+      &:after {
+        @extend %line_after;
+      }
+      @media only screen and (max-width: 585px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &__items {
+    h5 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 15px;
+    }
+    i {
+      color: $base_color;
+    }
+    .img__caption {
+      width: 60px;
+      height: 70px;
+      background-color: $base_color;
+      top: 35%;
+      left: -4%;
+      @media only screen and (max-width: 991px) {
+        top: 15%;
+      }
+      @media only screen and (max-width: 767px) {
+        top: 40%;
+      }
+      @media only screen and (max-width: 425px) {
+        top: 40%;
+        left: -2%;
+      }
+      @media only screen and (max-width: 320px) {
+        top: 25%;
+      }
+      h3 {
+        font-size: 30px;
+        @media only screen and (max-width: 767px) {
+          font-size: 20px;
+        }
+        @media only screen and (max-width: 585px) {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-family: $base_font;
+      }
+    }
+    .card-body {
+      @media only screen and (max-width: 360px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

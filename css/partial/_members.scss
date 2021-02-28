@@ -1,0 +1,21 @@
+.members {
+  background: $base_color;
+  &__content {
+    @media only screen and (max-width: 767px) {
+      border: {
+        right: none !important;
+        left: none !important;
+        top: solid 0.5px #fff;
+      }
+    }
+    h2 {
+      font-size: 72px;
+      @media only screen and (max-width: 585px) {
+        font-size: 36px;
+      }
+    }
+    h3 {
+      font-size: 14px;
+    }
+  }
+}

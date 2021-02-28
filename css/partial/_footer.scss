@@ -1,0 +1,45 @@
+.footer {
+  &__logo {
+    p {
+      font-size: 15px;
+    }
+    ul {
+      p {
+        font-family: $base_font;
+      }
+      i {
+        color: $base_color;
+      }
+    }
+    button {
+      &,
+      &:hover {
+        background-color: $base_color;
+        border-color: $base_color;
+      }
+    }
+  }
+  &__blogs {
+    h3 {
+      font-size: 14px;
+    }
+    h5 {
+      font-size: 12px;
+    }
+    p {
+      font: {
+        size: 13px;
+        family: $base_font;
+      }
+    }
+  }
+  &__instagram {
+    h3 {
+      font-size: 14px;
+    }
+    img {
+      padding: 1px;
+      object-fit: cover;
+    }
+  }
+}

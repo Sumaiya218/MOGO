@@ -1,0 +1,60 @@
+.team {
+  &__header {
+    width: 90%;
+    h4 {
+      @extend %h4_styling;
+      @media only screen and (max-width: 585px) {
+        font-size: 24px;
+      }
+    }
+    h2 {
+      font: {
+        size: $h2_font;
+      }
+      @media only screen and (max-width: 585px) {
+        font-size: 20px;
+      }
+
+      &:after {
+        @extend %line_after;
+      }
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  &__member {
+    &:hover &__layout {
+      opacity: 1;
+      box-shadow: 8px 8px $base_color;
+    }
+    &__layout {
+      background: linear-gradient(
+        rgba(219, 116, 117, 0.8),
+        rgba(228, 205, 125, 0.75)
+      );
+      top: 0;
+      opacity: 0;
+      transition: all 0.5s;
+      a {
+        margin: 1px;
+        background-color: #f6c23a;
+        i {
+          color: #f38181;
+          font-size: 1.5rem;
+        }
+        &:hover {
+          background-color: #f38181;
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__caption {
+    p {
+      font-size: 15px;
+    }
+  }
+}

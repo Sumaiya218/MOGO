@@ -1,0 +1,37 @@
+.doServices {
+  &__header {
+    width: 90%;
+    h4 {
+      @extend %h4_styling;
+      @media only screen and (max-width: 585px) {
+        font-size: 20px;
+      }
+    }
+    h2 {
+      &:after {
+        @extend %line_after;
+      }
+      @media only screen and (max-width: 585px) {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  &__colapse {
+    .icon {
+      right: 0;
+      font-size: 1.5rem;
+      color: $base2_color;
+    }
+    i {
+      color: $base_color;
+      font-size: 2rem;
+    }
+    .card-body {
+      line-height: 24px;
+      height: 170px;
+    }
+  }
+}

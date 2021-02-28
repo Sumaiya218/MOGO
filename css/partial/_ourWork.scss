@@ -1,0 +1,40 @@
+.ourWork {
+  &__header {
+    width: 90%;
+    h4 {
+      @extend %h4_styling;
+      @media only screen and (max-width: 585px) {
+        font-size: 20px;
+      }
+    }
+    h2 {
+      &:after {
+        @extend %line_after;
+      }
+      @media only screen and (max-width: 585px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &__img {
+    &__caption {
+      top: 0;
+      background: linear-gradient(
+        rgba(219, 116, 117, 0.8),
+        rgba(228, 205, 125, 0.75)
+      );
+      opacity: 0;
+      i {
+        font-size: 2rem;
+      }
+      p,
+      h5 {
+        font-size: 14px;
+      }
+    }
+    &:hover &__caption {
+      opacity: 1;
+      transition: all 0.75s;
+    }
+  }
+}

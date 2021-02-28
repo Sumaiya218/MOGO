@@ -1,0 +1,43 @@
+%line_after{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: #f38181;
+    display: block;
+    position: relative;
+    margin: 25px auto;
+}
+%nav_line{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #f6c23a ;
+    position: absolute;
+    display: block;
+    margin: 15px auto 10px;
+}
+%line2_after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    margin: 20px auto 40px;
+}
+
+%h4_styling{
+    font: {
+        size: $h4_font;
+        family: $base_font ;
+    }
+}
+%line_before{
+    content: "";
+    width: 60px;
+    display: inline-block;
+    margin-right: 5px;
+    height: 3px;
+    background-color: #f38181;
+    position: relative;
+}
